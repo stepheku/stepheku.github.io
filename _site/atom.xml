@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-23T21:47:11-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Stephen’s Blog</title><subtitle>Blog about networking, security and pharmacy</subtitle><entry><title type="html">Wiring up my home network (Part 1)</title><link href="http://localhost:4000/networking/2020/12/23/wiring-up-my-home-network.html" rel="alternate" type="text/html" title="Wiring up my home network (Part 1)" /><published>2020-12-23T19:01:52-05:00</published><updated>2020-12-23T19:01:52-05:00</updated><id>http://localhost:4000/networking/2020/12/23/wiring-up-my-home-network</id><content type="html" xml:base="http://localhost:4000/networking/2020/12/23/wiring-up-my-home-network.html">&lt;h1 id=&quot;wiring-up-my-home-network&quot;&gt;Wiring up my home network&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stephen's Blog</title>
+    <description>Blog about networking, security and pharmacy</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <author>
+      <name>Stephen</name>
+      <email></email>
+      <uri></uri>
+    </author>
+    
+      <item>
+        <title>Wiring up my home network (Part 1)</title>
+        <description>&lt;h1 id=&quot;wiring-up-my-home-network&quot;&gt;Wiring up my home network&lt;/h1&gt;
 &lt;p&gt;This blog and post (like most others of this same nature) were mostly inspired by &lt;a href=&quot;https://www.troyhunt.com/wiring-a-home-network-from-the-ground-up-with-ubiquiti/&quot;&gt;Troy Hunt’s Wiring a home network from the ground-up with Ubiquiti&lt;/a&gt;. When we bought our home, creating a home network and having multiple ethernet runs in all rooms was at the top of my to-do list. This would be a step up from a basic apartment setup of a modem, consumer-grade router and a switch if I felt a little edgy.&lt;/p&gt;
 
 &lt;p&gt;My equipment has been collected over several years and are across multiple vendors. Some were purchased through recommendations from other people doing their home networks (Ubiquiti Access Points) and others were purchased blindly through recommendations from Amazon (like my Mikrotik router - I am not proud of how I made that decision, but am glad I made it).&lt;/p&gt;
@@ -46,4 +61,13 @@ The modem connects to the Mikrotik router, which then connects to the Netgear sw
 
 &lt;p&gt;Modular patch panels can be helpful down the road. If you realize you have to move some equipment around, or did a terrible job at estimating cable length, the ability to quickly swap in-and-out jacks without having to do a punch-down again&lt;/p&gt;
 
-&lt;p&gt;Purchase the right rack for the right setting. I purchased a wall mount because I thought I could save some money by purchasing it and placing it on the ground, and now it attracts dust like crazy because of the giant opening in the back that should have been attached to a wall&lt;/p&gt;</content><author><name></name></author><category term="networking" /><summary type="html">Wiring up my home network This blog and post (like most others of this same nature) were mostly inspired by Troy Hunt’s Wiring a home network from the ground-up with Ubiquiti. When we bought our home, creating a home network and having multiple ethernet runs in all rooms was at the top of my to-do list. This would be a step up from a basic apartment setup of a modem, consumer-grade router and a switch if I felt a little edgy.</summary></entry></feed>
+&lt;p&gt;Purchase the right rack for the right setting. I purchased a wall mount because I thought I could save some money by purchasing it and placing it on the ground, and now it attracts dust like crazy because of the giant opening in the back that should have been attached to a wall&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Dec 2020 19:01:52 -0500</pubDate>
+        <link>http://localhost:4000//wiring-up-my-home-network</link>
+        <link href="http://localhost:4000/wiring-up-my-home-network"/>
+        <guid isPermaLink="true">http://localhost:4000/wiring-up-my-home-network</guid>
+      </item>
+    
+  </channel>
+</rss>
