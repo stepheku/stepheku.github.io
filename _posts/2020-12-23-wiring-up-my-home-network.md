@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Wiring up my home network (Part 1)"
+date:   2020-12-23 19:01:52 -0500
+categories: networking
+---
+# Wiring up my home network
+This blog and post (like most others of this same nature) were mostly inspired by [Troy Hunt's Wiring a home network from the ground-up with Ubiquiti](https://www.troyhunt.com/wiring-a-home-network-from-the-ground-up-with-ubiquiti/). When we bought our home, creating a home network and having multiple ethernet runs in all rooms was at the top of my to-do list. This would be a step up from a basic apartment setup of a modem, consumer-grade router and a switch if I felt a little edgy.
+
+My equipment has been collected over several years and are across multiple vendors. Some were purchased through recommendations from other people doing their home networks (Ubiquiti Access Points) and others were purchased blindly through recommendations from Amazon (like my Mikrotik router - I am not proud of how I made that decision, but am glad I made it).
+
+Also to preface that when starting this project/series of projects, I had little to no networking knowledge. At the time, I could vaguely explain with some frantic hand-waving how DNS worked and what an IP address was. Looking back now, I would say I learned a thing or two, and can hold a basic conversation about network segmentation with VLANs and subnets.
+
+## Equipment list
+1. Tripp Lite 6U Wall Mount Rack Enclosure
+2. Cable Matters 24-Port RJ45 Patch Panel
+3. Mikrotik Router RB2011UiAS-2HnD-IN
+4. Netgear GS724TPv2 24-Port Switch
+5. Ubiquiti Unifi Cloud Key Gen 2 Plus
+6. Ubiquiti Unifi AP-AC Long Range Wireless access point
+7. Tripp Lite 1200VA Smart UPS Battery Back Up
+8. TP-Link 8 Port PoE Switch (TL-SG108PE)
+9. Ubiquiti Unifi 8-Port PoE 150W Switch
+
+## Rack setup
+The main rack is located underneath the stairs
+1. 1U Cable Matters 24-Port RJ45 Patch Panel
+2. 1U Netgear GS724TPv2 24-Port Switch
+3. Blank
+4. 1U rack to hold the Mikrotik Router RB2011UiAS-2HnD-IN and a Unifi AP
+5. 2U Tripp Lite 1200VA Smart UPS Battery Back Up
+The modem connects to the Mikrotik router, which then connects to the Netgear switch. Primary workstations are connected to the Netgear switch as well as the Unifi AP
+
+## Running the ethernet cables
+The house did not have any ethernet ports already set up. There were RJ-11 and coax ports installed, but were fished through areas that didn't have attic access or easy crawlspace access. That meant either taking down the walls or putting down cable runners. Since I had no experience doing anything with drywall, cable runners were the go to option. A trip to Home Depot later, I was a few hundred dollars lighter, spent on cable runners, data boxes and a ton of Cat6 cabling, keystone jacks and plugs.  
+
+After laying down the cable runners along baseboards and corners, and setting up the data boxes and cabling, I had finally started the fun process of crimping, testing and hoping I didn't mess up all of the Cat6 cabling. A few days of frustration later, the living room now has 3 data boxes with 2 to 5 ports each, the loft area has a databox with 2 ports and the guest room has a databox with 4 ports
+
+## Ancillary switches and APs
+With more ports to plug stuff in, I started thinking of attaching ancillary switches and APs. My reasoning for the ancillary switches was more for PoE reasons so I would make sure not to overload the main switch by plugging in too many PoE devices, and I suppose my reasoning for the APs is obvious. 
+
+Because the ports in the living room had the largest coverage area, I decided to set up the additional AP there. 
+
+## Lessons learned
+I had made some lucky choices through all of this, but there are some major things I would change if I had to do it all again. This comes from both screwing up and learning from the posts and comments on r/homelab
+
+Purchase patch cables instead of making your own. They are cheap, they save you time and they're likely more durable than the ones you crimp yourself (especially if you just started to learn how to crimp ethernet cables for the sole purpose of your home network)
+
+Modular patch panels can be helpful down the road. If you realize you have to move some equipment around, or did a terrible job at estimating cable length, the ability to quickly swap in-and-out jacks without having to do a punch-down again
+
+Purchase the right rack for the right setting. I purchased a wall mount because I thought I could save some money by purchasing it and placing it on the ground, and now it attracts dust like crazy because of the giant opening in the back that should have been attached to a wall
