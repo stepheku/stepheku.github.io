@@ -2,7 +2,7 @@
 layout: post
 title:  "Ansible vault for storing credentials in a playbook"
 date: 2021-01-31 19:01:52 -0500
-categories: ansible
+tags: ansible
 ---
 ## Why this?
 I've been slowly learning how to use ansible for the last few months as a way to automate managing some of my raspberry pi's as well as VMs that are sitting off of my proxmox server. One of the main things I've had trouble with is running commands via playbooks that require some sort of sudo password. Hard-coded credentials are bad news, as well as leaving credentials in the .bash_history. I figured I would take a look at ansible-vault since it's one recommended way to store credentials

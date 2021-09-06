@@ -2,9 +2,8 @@
 layout: post
 title:  "Wiring up my home network (Part 1)"
 date:   2020-12-23 19:01:52 -0500
-categories: networking
+tags: networking
 ---
-# Wiring up my home network
 This blog and post (like most others of this same nature) were mostly inspired by [Troy Hunt's Wiring a home network from the ground-up with Ubiquiti](https://www.troyhunt.com/wiring-a-home-network-from-the-ground-up-with-ubiquiti/). When we bought our home, creating a home network and having multiple ethernet runs in all rooms was at the top of my to-do list. This would be a step up from a basic apartment setup of a modem, consumer-grade router and a switch if I felt a little edgy.
 
 My equipment has been collected over several years and are across multiple vendors. Some were purchased through recommendations from other people doing their home networks (Ubiquiti Access Points) and others were purchased blindly through recommendations from Amazon (like my Mikrotik router - I am not proud of how I made that decision, but am glad I made it).
@@ -21,6 +20,33 @@ Also to preface that when starting this project/series of projects, I had little
 7. Tripp Lite 1200VA Smart UPS Battery Back Up
 8. TP-Link 8 Port PoE Switch (TL-SG108PE)
 9. Ubiquiti Unifi 8-Port PoE 150W Switch
+
+### Tripp Lite 6U Wall Mount Rack Enclosure
+I ended up with this rack enclosure because it was the cheapest rack at the time. Instead of mounting it on the wall, it just sits on the floor, which isn't the best place for it.
+
+### Cable Matters 24-Port RJ45 Patch Panel
+This is just a basic patch panel. On the back, you use the punch-down tool to connect a cable that comes from its terminal port (or wherever). On the front, you can use a patch cable to connect the cable on the back to another device (on my case, usually a switch). One of my biggest issues with this patch panel is how it's not as modular as say a coupler patch panel (for example: [kenable 24 Port RJ45 CAT6 Gigabit Through Coupler Patch Panel with Back Bar](https://www.amazon.com/gp/product/B07951MLD4)). Although there are limitations to the modularity of the coupler patch panel, giving a change to correct your mistakes when you accidentally across another cable inappropriately is well appreciated
+
+### Mikrotik Router RB2011UiAS-2HnD-IN
+A pretty solid consumer router. Does VLANs, subnetting, more advanced firewall rules, etc
+
+### Netgear GS724TPv2 24-Port Switch
+Super reliable switch that also offers power over ethernet (PoE, using 802.3at). The only time I need to reboot my switch is if I'm doing firmware updates or I've just completely messed up and need to do a factory reset
+
+### Ubiquiti Unifi Cloud Key Gen 2 Plus
+The Cloud Key from Ubiquiti offers a place to access the Unifi Controller and Unifi Protect apps. Prior to using this, I had installed the Unifi Controller on to a VM instead
+
+### Ubiquiti Unifi AP-AC Long Range Wireless access point
+Super solid wireless access points. Because there are so many different Unifi access points out there, I had just purchased these because I saw a review about them somewhere. It took some time to get used to the fact that all of them were controlled by the Unifi Controller and not using individual web-interfaces
+
+### Tripp Lite 1200VA Smart UPS Battery Back Up
+Solid UPS. Has saved me plenty of times during power surges or times when I had lost power
+
+### TP-Link 8 Port PoE Switch (TL-SG108PE)
+An older switch I was using before I started to use the Netgear switch. This one is just an ancillary switch in the loft area
+
+### Ubiquiti Unifi 8-Port PoE 150W Switch
+A newer purchase that is also an ancillary switch in the garage. This switch acts similarly to the wireless access points where it's controlled from the Unifi Controller rather than a web interface
 
 ## Rack setup
 The main rack is located underneath the stairs

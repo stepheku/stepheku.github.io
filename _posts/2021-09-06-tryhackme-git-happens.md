@@ -2,7 +2,7 @@
 layout: post
 title:  "TryHackMe: Git Happens"
 date: 2021-09-06 09:01:00 -0500
-categories: tryhackme security
+tags: tryhackme security
 ---
 Since I have not really been doing TryHackMe rooms, I figured I should try doing them again and do some of my own write-ups. Write-ups have been super helpful in that I can review things that I forget in the future
 
